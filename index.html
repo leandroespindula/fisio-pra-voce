@@ -454,6 +454,16 @@
         color: var(--ink-soft);
       }
 
+      .specialty-list {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--ink-soft);
+      }
+
+      .specialty-list li + li {
+        margin-top: 8px;
+      }
+
       .specialties {
         display: grid;
         gap: 14px;
@@ -938,50 +948,62 @@
           <div class="container">
             <div class="section-head reveal">
               <h2>Para quem é</h2>
-              <p>Indicado para quem busca alívio, reabilitação e orientação qualificada com condutas possíveis de executar no próprio ambiente.</p>
+              <p>Indicado para quadros leves, moderados ou em fase de manutenção, com orientação qualificada e exercícios possíveis de executar no próprio ambiente.</p>
             </div>
             <div class="specialties">
               <article class="specialty-card reveal">
                 <div class="icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M12 3c-1.4 2.1-1.4 4.2 0 6.3 1.4 2.1 1.4 4.2 0 6.3-1 1.5-1.2 3.1-.6 4.9" /><path d="M7 5c2.5 1.8 7.5 1.8 10 0" /><path d="M7 12c2.5 1.8 7.5 1.8 10 0" /><path d="M7 19c2.5 1.8 7.5 1.8 10 0" /></svg>
                 </div>
-                <h3>Dor lombar e coluna</h3>
-                <p>Avaliação de padrões de movimento e estratégias para reduzir dor e rigidez.</p>
+                <h3>Ortopedia e Reabilitação</h3>
+                <ul class="specialty-list">
+                  <li>Pós-operatório tardio, em fase de ganho de força</li>
+                  <li>Tendinopatias: Aquiles, patelar e manguito rotador</li>
+                  <li>Osteoartrite de joelho e quadril</li>
+                  <li>Instabilidade de tornozelo</li>
+                </ul>
               </article>
               <article class="specialty-card reveal">
                 <div class="icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M5 13l4-4 3 3 7-7" /><path d="M19 5v6h-6" /><path d="M5 19h14" /></svg>
                 </div>
-                <h3>Lesões ortopédicas</h3>
-                <p>Reabilitação progressiva para recuperar força, mobilidade e confiança.</p>
+                <h3>Dor Crônica</h3>
+                <ul class="specialty-list">
+                  <li>Lombalgia e cervicalgia crônica</li>
+                  <li>Fibromialgia</li>
+                  <li>Dor miofascial</li>
+                </ul>
               </article>
               <article class="specialty-card reveal">
                 <div class="icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M8 4h8" /><path d="M9 4v5l-4 7a3 3 0 0 0 2.6 4.5h8.8A3 3 0 0 0 19 16l-4-7V4" /><path d="M8 15h8" /></svg>
                 </div>
-                <h3>Pós-cirúrgico</h3>
-                <p>Acompanhamento cuidadoso para cada fase da recuperação, conforme liberação médica.</p>
+                <h3>Reeducação Postural / RPG</h3>
+                <ul class="specialty-list">
+                  <li>Escoliose leve ou moderada</li>
+                  <li>Hipercifose e hiperlordose</li>
+                </ul>
               </article>
               <article class="specialty-card reveal">
                 <div class="icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M4 19h16" /><path d="M7 19V8a5 5 0 0 1 10 0v11" /><path d="M9 11h6" /></svg>
                 </div>
-                <h3>Dor por postura</h3>
-                <p>Ajustes práticos para trabalho, estudo e rotina, com exercícios de alívio e prevenção.</p>
+                <h3>Neurologia leve/moderada</h3>
+                <ul class="specialty-list">
+                  <li>Sequelas leves de AVC, em fase de manutenção</li>
+                  <li>Doença de Parkinson, fase inicial ou intermediária</li>
+                  <li>Esclerose múltipla estável</li>
+                </ul>
               </article>
               <article class="specialty-card reveal">
                 <div class="icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 0-4 4v8a4 4 0 0 0 8 0V8a4 4 0 0 0-4-4Z" /><path d="M8 9H5" /><path d="M19 9h-3" /><path d="M8 15H5" /><path d="M19 15h-3" /></svg>
                 </div>
-                <h3>Fisioterapia neurológica</h3>
-                <p>Exercícios guiados para funcionalidade, coordenação e independência no dia a dia.</p>
-              </article>
-              <article class="specialty-card reveal">
-                <div class="icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><path d="M12 20c4-3.4 7-6.4 7-10a5 5 0 0 0-7-4.6A5 5 0 0 0 5 10c0 3.6 3 6.6 7 10Z" /><path d="M12 8v5" /><path d="M9.5 10.5h5" /></svg>
-                </div>
-                <h3>Saúde da mulher</h3>
-                <p>Cuidado individualizado para demandas pélvicas, gestação, pós-parto e bem-estar.</p>
+                <h3>Geriatria</h3>
+                <ul class="specialty-list">
+                  <li>Prevenção de quedas com exercícios de equilíbrio</li>
+                  <li>Sarcopenia e fragilidade</li>
+                </ul>
               </article>
             </div>
           </div>

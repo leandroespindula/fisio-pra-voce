@@ -464,6 +464,35 @@
         margin-top: 8px;
       }
 
+      .teleconsulta-limits {
+        background: #fbf6ee;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .limits-grid {
+        display: grid;
+        gap: 14px;
+      }
+
+      .limit-card {
+        padding: 22px;
+        border: 1px solid rgba(196, 123, 74, 0.22);
+        border-radius: var(--radius);
+        background: rgba(255, 250, 243, 0.7);
+      }
+
+      .limit-card h3 {
+        margin: 0 0 10px;
+        color: var(--clay-dark);
+        font-size: 1.15rem;
+      }
+
+      .limit-card p {
+        margin: 0;
+        color: var(--ink-soft);
+      }
+
       .specialties {
         display: grid;
         gap: 14px;
@@ -507,7 +536,6 @@
 
       .faq {
         background: #fbf6ee;
-        border-top: 1px solid var(--line);
         border-bottom: 1px solid var(--line);
       }
 
@@ -760,6 +788,7 @@
 
         .steps,
         .specialties,
+        .limits-grid,
         .testimonials {
           grid-template-columns: repeat(2, 1fr);
         }
@@ -851,6 +880,7 @@
           <nav class="nav" aria-label="Navegação principal">
             <a href="#como-funciona">Como funciona</a>
             <a href="#especialidades">Para quem é</a>
+            <a href="#teleconsulta-limites">Limitações</a>
             <a href="#faq">Dúvidas</a>
           </nav>
 
@@ -1004,6 +1034,29 @@
                   <li>Prevenção de quedas com exercícios de equilíbrio</li>
                   <li>Sarcopenia e fragilidade</li>
                 </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="teleconsulta-limits" id="teleconsulta-limites">
+          <div class="container">
+            <div class="section-head reveal">
+              <h2>O que não funciona bem na teleconsulta</h2>
+              <p>Alguns casos precisam de avaliação presencial, toque terapêutico ou suporte mais próximo para garantir segurança e qualidade no cuidado.</p>
+            </div>
+            <div class="limits-grid">
+              <article class="limit-card reveal">
+                <h3>Fases agudas</h3>
+                <p>Casos com necessidade de avaliação manual, como pós-cirúrgico imediato, edema ou feridas.</p>
+              </article>
+              <article class="limit-card reveal">
+                <h3>Técnicas manuais</h3>
+                <p>Liberação miofascial, mobilização articular e RPG mãos-on dependem de atendimento presencial.</p>
+              </article>
+              <article class="limit-card reveal">
+                <h3>Barreiras de acesso</h3>
+                <p>Pacientes sem acesso à tecnologia ou com déficit cognitivo importante podem precisar de outro formato de acompanhamento.</p>
               </article>
             </div>
           </div>

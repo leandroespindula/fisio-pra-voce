@@ -24,6 +24,23 @@
 
       gtag('config', 'AW-11314201011');
     </script>
+    <!-- Event snippet for Enviar formulario de lead conversion page -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11314201011/RQxDCIzaiIwcELODhJMq',
+            'value': 1.0,
+            'currency': 'BRL',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
     <style>
       :root {
         --sand: #f5f0e8;
@@ -827,7 +844,7 @@
             <a href="#faq">Dúvidas</a>
           </nav>
 
-          <a class="btn btn-sage header-cta" href="https://cal.com/dra.jessica-fernandes/30min?user=dra.jessica-fernandes&overlayCalendar=true">
+          <a class="btn btn-sage header-cta" href="https://cal.com/dra.jessica-fernandes/30min?user=dra.jessica-fernandes&overlayCalendar=true" onclick="return gtag_report_conversion(this.href);">
             Agendar consulta
           </a>
         </div>
@@ -843,10 +860,10 @@
                 Atendimento online com avaliação, plano terapêutico personalizado e acompanhamento próximo para recuperar movimento, aliviar dores e voltar à rotina com segurança.
               </p>
               <div class="hero-actions">
-                <a class="btn btn-primary" href="https://cal.com/dra.jessica-fernandes/30min?user=dra.jessica-fernandes&overlayCalendar=true">
+                <a class="btn btn-primary" href="https://cal.com/dra.jessica-fernandes/30min?user=dra.jessica-fernandes&overlayCalendar=true" onclick="return gtag_report_conversion(this.href);">
                   Agendar minha consulta
                 </a>
-                <a class="btn btn-outline" href="https://cal.com/dra.jessica-fernandes/30min?user=dra.jessica-fernandes&overlayCalendar=true">
+                <a class="btn btn-outline" href="https://cal.com/dra.jessica-fernandes/30min?user=dra.jessica-fernandes&overlayCalendar=true" onclick="return gtag_report_conversion(this.href);">
                   Encontrar melhor horário
                 </a>
               </div>
@@ -879,7 +896,7 @@
                 <div class="slot"><span>Amanhã</span><small>09:00</small></div>
                 <div class="slot"><span>Sexta-feira</span><small>14:00</small></div>
               </div>
-              <a class="btn btn-sage" href="https://cal.com/dra.jessica-fernandes/30min?user=dra.jessica-fernandes&overlayCalendar=true">
+              <a class="btn btn-sage" href="https://cal.com/dra.jessica-fernandes/30min?user=dra.jessica-fernandes&overlayCalendar=true" onclick="return gtag_report_conversion(this.href);">
                 Ver agenda completa
               </a>
             </aside>
@@ -1105,7 +1122,7 @@
               <p>Agende uma consulta online e receba um plano claro para cuidar do seu movimento com orientação profissional.</p>
               <div class="guarantee">Cancelamento e remarcação conforme política da agenda.</div>
             </div>
-            <a class="btn btn-primary" href="https://cal.com/dra.jessica-fernandes/30min?user=dra.jessica-fernandes&overlayCalendar=true">
+            <a class="btn btn-primary" href="https://cal.com/dra.jessica-fernandes/30min?user=dra.jessica-fernandes&overlayCalendar=true" onclick="return gtag_report_conversion(this.href);">
               Agendar consulta agora
             </a>
           </div>
@@ -1121,7 +1138,7 @@
           <div class="footer-links">
             <a href="#privacidade">Política de privacidade</a>
             <a href="mailto:contato@drajessicafernandes.com.br">Contato</a>
-            <a href="https://cal.com/dra.jessica-fernandes/30min?user=dra.jessica-fernandes&overlayCalendar=true">Agendamento</a>
+            <a href="https://cal.com/dra.jessica-fernandes/30min?user=dra.jessica-fernandes&overlayCalendar=true" onclick="return gtag_report_conversion(this.href);">Agendamento</a>
           </div>
         </div>
       </footer>

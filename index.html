@@ -345,7 +345,7 @@
         overflow: hidden;
         background:
           linear-gradient(135deg, rgba(28, 28, 26, 0.44), rgba(28, 28, 26, 0.05)),
-          url("https://images.unsplash.com/photo-1571019613914-85f342c6a11e?auto=format&fit=crop&w=900&q=80") center/cover;
+          url("https://images.pexels.com/photos/7551611/pexels-photo-7551611.jpeg?auto=compress&cs=tinysrgb&w=900") center/cover;
       }
 
       .visual-panel span {
@@ -400,6 +400,110 @@
         color: var(--sage-dark);
         font-size: 0.78rem;
         font-weight: 800;
+      }
+
+      .about-section {
+        background: #fbf6ee;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .about-grid {
+        display: grid;
+        gap: 32px;
+        align-items: center;
+      }
+
+      .about-photo-wrap {
+        position: relative;
+      }
+
+      .about-photo {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      .about-credential {
+        position: absolute;
+        right: 14px;
+        bottom: 14px;
+        max-width: min(250px, calc(100% - 28px));
+        padding: 14px 16px;
+        border: 1px solid rgba(90, 122, 94, 0.2);
+        border-radius: var(--radius);
+        background: rgba(255, 250, 243, 0.94);
+        box-shadow: 0 18px 38px rgba(28, 28, 26, 0.12);
+      }
+
+      .about-credential strong,
+      .about-credential span {
+        display: block;
+      }
+
+      .about-credential strong {
+        color: var(--sage-dark);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .about-credential span {
+        margin-top: 4px;
+        color: var(--ink-soft);
+        font-size: 0.88rem;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+
+      .about-copy p {
+        max-width: 680px;
+        margin: 20px 0 0;
+        color: var(--ink-soft);
+        font-size: 1.06rem;
+      }
+
+      .about-points {
+        display: grid;
+        gap: 12px;
+        margin: 28px 0;
+      }
+
+      .about-point {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(255, 250, 243, 0.62);
+      }
+
+      .about-point::before {
+        flex: 0 0 auto;
+        width: 10px;
+        height: 10px;
+        margin-top: 8px;
+        border-radius: 50%;
+        background: var(--clay);
+        content: "";
+      }
+
+      .about-point strong {
+        display: block;
+        margin-bottom: 3px;
+        color: var(--dark);
+      }
+
+      .about-point span {
+        display: block;
+        color: var(--ink-soft);
+        line-height: 1.45;
       }
 
       section {
@@ -799,6 +903,10 @@
         .testimonials {
           grid-template-columns: repeat(2, 1fr);
         }
+
+        .about-points {
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
 
       @media (min-width: 880px) {
@@ -818,6 +926,11 @@
 
         .hero-grid {
           grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.72fr);
+          gap: 58px;
+        }
+
+        .about-grid {
+          grid-template-columns: minmax(310px, 0.72fr) minmax(0, 1fr);
           gap: 58px;
         }
 
@@ -889,6 +1002,7 @@
           </a>
 
           <nav class="nav" aria-label="Navegação principal">
+            <a href="#sobre-mim">Sobre mim</a>
             <a href="#como-funciona">Como funciona</a>
             <a href="#especialidades">Para quem é</a>
             <a href="#teleconsulta-limites">Limitações</a>
@@ -936,8 +1050,8 @@
             </div>
 
             <aside class="availability-card reveal" aria-label="Próximos horários disponíveis">
-              <div class="visual-panel" role="img" aria-label="Atendimento de fisioterapia online por videochamada">
-                <span>Consulta ao vivo, exercícios guiados e condutas adaptadas à sua rotina.</span>
+              <div class="visual-panel" role="img" aria-label="Atendimento de fisioterapia domiciliar com exercício orientado">
+                <span>Atendimento com exercícios guiados e condutas adaptadas à sua rotina.</span>
               </div>
               <span class="card-topline">Agenda online</span>
               <h2>Próximos horários</h2>
@@ -951,6 +1065,58 @@
                 Ver agenda completa
               </a>
             </aside>
+          </div>
+        </section>
+
+        <section class="about-section" id="sobre-mim">
+          <div class="container about-grid">
+            <div class="about-photo-wrap reveal">
+              <img
+                class="about-photo"
+                src="WhatsApp Image 2026-05-09 at 7.33.06 AM.jpeg"
+                alt="Dra. Jéssica Fernandes, fisioterapeuta"
+              />
+              <div class="about-credential" aria-label="Registro profissional">
+                <strong>CREFITO 346781-F</strong>
+                <span>Fisioterapeuta com atendimento online individualizado</span>
+              </div>
+            </div>
+            <div class="about-copy reveal">
+              <span class="eyebrow">Sobre mim</span>
+              <h2>Sou Jéssica Fernandes, fisioterapeuta dedicada a transformar dor em movimento com segurança.</h2>
+              <p>
+                Minha atuação une avaliação clínica, escuta cuidadosa e prescrição de exercícios baseada no que faz sentido para a sua rotina. Na consulta online, você recebe orientação clara, acompanhamento próximo e um plano terapêutico construído para evoluir com confiança.
+              </p>
+              <div class="about-points">
+                <div class="about-point">
+                  <div>
+                    <strong>Experiência aplicada</strong>
+                    <span>Mais de 8 anos acompanhando pacientes com dor, reabilitação, postura e retomada de movimento.</span>
+                  </div>
+                </div>
+                <div class="about-point">
+                  <div>
+                    <strong>Conduta responsável</strong>
+                    <span>Indicação transparente do que pode ser feito online e do que precisa de avaliação presencial.</span>
+                  </div>
+                </div>
+                <div class="about-point">
+                  <div>
+                    <strong>Plano personalizado</strong>
+                    <span>Exercícios e orientações ajustados ao seu quadro, ao seu ambiente e ao seu ritmo de evolução.</span>
+                  </div>
+                </div>
+                <div class="about-point">
+                  <div>
+                    <strong>Cuidado humano</strong>
+                    <span>Linguagem simples, acolhimento e acompanhamento para você entender cada etapa do tratamento.</span>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-sage" href="https://cal.com/dra.jessica-fernandes/30min?user=dra.jessica-fernandes&overlayCalendar=true" onclick="return gtag_report_conversion(this.href);">
+                Agendar consulta com a Dra. Jéssica
+              </a>
+            </div>
           </div>
         </section>
 
